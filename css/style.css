@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+    --jost: "Jost", sans-serif;
+    --josefin: "Josefin Sans", sans-serif;
+    --transition: all 0.5s;
+    --theme-heading: #333333;
+    --theme-black: #000000;
+    --button-text: #690A2C;
+    --theme-white: #FFFFFF;
+}
+
+html,
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--jost);
+    overflow-x: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+p a:hover {
+    color: #41924d;
+}
+
+p a:hover i {
+    color: #41924d;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-family: var(--josefin);
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+a {
+    transition: all 0.5s;
+    color: #000000;
+}
+
+/* Start Form Input */
+
+input[type=checkbox] {
+    position: relative;
+    border: 2px solid #000;
+    border-radius: 2px;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0 .6em 0 0;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: text-top;
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    opacity: .5;
+}
+
+input[type=checkbox]:hover {
+    opacity: 1;
+}
+
+input[type=checkbox]:checked {
+    background-color: #000;
+    opacity: 1;
+}
+
+input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 4px;
+    height: 10px;
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1px 0 -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #000;
+    outline: none !important;
+}
+
+textarea {
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    color: #000;
+    outline: none !important;
+}
+
+select {
+    width: 100%;
+    background: url(images/sort-down.svg) no-repeat calc(100% - 16px) center transparent;
+    background-color: #ffffff;
+    background-size: 12px;
+    padding-right: 42px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    outline: none !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+
+::-webkit-input-placeholder {
+    opacity: 1;
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    opacity: 1;
+    color: #000;
+}
+
+::-moz-placeholder {
+    opacity: 1;
+    color: #000;
+}
+
+:-moz-placeholder {
+    opacity: 1;
+    color: #000;
+}
+
+a {
+    display: inline-block;
+    transition: var(--transition);
+    color: var(--default-black);
+    text-decoration: none;
+}
+
+blockquote {
+    margin: 0;
+}
+
+a:hover {
+    color: #41924d;
+}
+
+button.navbar-toggler:focus-visible,
+button.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* @media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1440px;
+  }
+} */
+/* MAIN CSS START FROM HERE  */
+h1{
+    font-size: 48px;
+
+}
+h3{
+    font-weight: 600;
+}
+h3,h4{
+    font-size: 20px;
+}
+p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.title_area{
+    max-width: 700px;
+}
+.tab_content_wrapper{
+    padding: 100px 0;
+}
+.nav_wrapper {
+    padding: 50px 20px;
+    background: #263238;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_content_wrapper {
+    width: calc(100% - 20%);
+    margin-left: auto;
+}
+
+.tab_ul li a {
+    color: #f5f5f5;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.tab_ul {
+    text-align: center;
+}
+
+.tab_ul li {
+    margin-bottom: 5px;
+}
